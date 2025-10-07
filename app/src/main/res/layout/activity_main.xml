@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFF0F5"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:text="KALKULATOR CANTIK"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/EditTextAngka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka pertama"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/EditTextAngka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka kedua"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/TextViewHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil akan muncul di sini"
+        android:textColor="#880E4F"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/TombolTambah"
+            android:text="+"
+            style="@style/CalcButton"/>
+
+        <Button
+            android:id="@+id/TombolKurang"
+            android:text="-"
+            style="@style/CalcButton"/>
+
+        <Button
+            android:id="@+id/TombolKali"
+            android:text="×"
+            style="@style/CalcButton"/>
+
+        <Button
+            android:id="@+id/TombolBagi"
+            android:text="÷"
+            style="@style/CalcButton"/>
+    </GridLayout>
+
+</LinearLayout>
